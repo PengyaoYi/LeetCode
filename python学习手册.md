@@ -19,3 +19,23 @@ str.find("") 查询操作
  str.replace("","")
 
 str.split()
+
+r""  原生，不对\字符进行转义
+
+### 列表
+
+list.append(item)
+
+list.pop(position)
+
+list.sort()升序排列
+
+list.reverse()
+
+**zip**
+
+打包元组
+
+*拆分
+
+经典用法 list(zip(*a))
