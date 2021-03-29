@@ -32,3 +32,18 @@ return res
 
 # 98
 
+[验证搜索二叉树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+### 递归
+
+```
+def help(root,low,upper):
+            if not root:
+                return True
+            cur=root
+            if cur.val>=upper or cur.val<=low:
+                return False
+            return help(cur.left,low,cur.val) and  help(cur.right,cur.val,upper)
+        return help(root,-float('inf'),float('inf'))
+```
+
