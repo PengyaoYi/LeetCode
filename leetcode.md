@@ -47,3 +47,15 @@ def help(root,low,upper):
         return help(root,-float('inf'),float('inf'))
 ```
 
+
+
+# 99
+
+[恢复二叉搜索树](https://leetcode-cn.com/problems/recover-binary-search-tree/)
+
+要求空间复杂度为O(1)
+
+### 递归 Morris Traversal算法
+
+空间复杂度为O(n)的做法：中序遍历二叉树，找到非递增的节点，交换一下。
+
